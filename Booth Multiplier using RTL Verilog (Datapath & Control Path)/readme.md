@@ -227,13 +227,22 @@ Binary output:
 
 ---
 
-## 🧾 Author
 
-**SK Sardar Basha**
-M.Tech – VLSI Design
 
----
 
 ## 📌 Conclusion
 
 This project demonstrates a complete RTL‑level implementation of a Booth Multiplier, highlighting both **algorithmic understanding** and **practical hardware debugging skills**, making it suitable for academic evaluation as well as VLSI internship and placement interviews.
+
+---
+
+---
+
+## 👤 Author
+**Shaik Sardar Basha**  
+M.Tech (VLSI), NIT Jamshedpur  
+Passionate about **Digital Design, FSMs,, Chip Design, and VLSI Implementation**.  
+
+---
+
+⭐ If you find this project helpful, don’t forget to give it a **star**!
