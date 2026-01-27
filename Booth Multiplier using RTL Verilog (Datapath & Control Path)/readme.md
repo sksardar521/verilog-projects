@@ -22,6 +22,11 @@ The project was developed, debugged, and validated end‑to‑end, including fix
 
 Booth’s algorithm optimizes signed multiplication by encoding the multiplier bits and reducing unnecessary additions.
 
+
+
+<img width="620" height="332"  alt="image" src="https://github.com/user-attachments/assets/df9070df-c300-463b-b525-d6246923caec" />
+
+
 ### Decision Rule
 
 Based on `(Q0, Q-1)`:
@@ -46,11 +51,14 @@ Product = {A, Q}
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ### 1️⃣ Datapath
 
 Responsible for all data operations.
+
+
+<img width="601" height="381" alt="image" src="https://github.com/user-attachments/assets/b5213abc-25b6-4a6e-9cd7-7065740b7bec" />
 
 **Main Components:**
 
@@ -67,6 +75,9 @@ Responsible for all data operations.
 ### 2️⃣ Control Path (FSM)
 
 Controls the sequencing of Booth operations.
+
+
+<img width="593" height="459" alt="image" src="https://github.com/user-attachments/assets/1c029e6a-077e-4181-9c76-2b5ab5fe6d7c" />
 
 **FSM Responsibilities:**
 
@@ -102,15 +113,20 @@ Controls the sequencing of Booth operations.
 * Uses default signal assignments to avoid X‑propagation
 * Proper state initialization ensures correct simulation start
 
+<img width="704" height="202" alt="image" src="https://github.com/user-attachments/assets/91563d63-4d35-459c-80e3-b8fd931ce5e2" />
+<img width="148" height="253" alt="image" src="https://github.com/user-attachments/assets/aa937cb0-e058-4e34-881b-fcfbad9499b5" />
+
 ### 🔹 `shift_register.v`
 
 * Supports load, clear, and arithmetic right shift
 * Used for both A and Q registers
+<img width="701" height="307" alt="image" src="https://github.com/user-attachments/assets/f5ce6b32-8423-4ec9-90aa-021b13cfb39b" />
 
 ### 🔹 `alu.v`
 
 * Performs signed addition or subtraction
 * Controlled by `addsub` signal
+<img width="666" height="263" alt="image" src="https://github.com/user-attachments/assets/9be8c5e3-e59b-4b72-ad15-05fd9b861926" />
 
 ### 🔹 `counter.v`
 
@@ -118,13 +134,18 @@ Controls the sequencing of Booth operations.
 * Decrements once per Booth cycle
 * Drives `eqz` condition
 
+<img width="584" height="237" alt="image" src="https://github.com/user-attachments/assets/6d03e247-f4b7-483f-b772-d6b32b7b5b36" />
+
 ### 🔹 `d_ff.v`
 
 * Stores Q‑1 bit required for Booth decision logic
+<img width="554" height="270" alt="image" src="https://github.com/user-attachments/assets/21679438-227e-4ffe-935d-c4a68ae762d8" />
 
 ### 🔹 `pipo_reg.v`
 
 * Parallel‑in parallel‑out register for multiplicand storage
+
+<img width="536" height="266" alt="image" src="https://github.com/user-attachments/assets/fdc523b5-811a-46a7-bde5-48b926b65e47" />
 
 ---
 
@@ -182,6 +203,9 @@ Binary output:
 ```
 1101111110
 ```
+<img width="938" height="346" alt="image" src="https://github.com/user-attachments/assets/92f5566f-87e3-49a0-ba34-d46408a6507e" />
+
+<img width="750" height="244" alt="image" src="https://github.com/user-attachments/assets/68c4f4a3-1e1d-464e-80a2-e6b476adf3db" />
 
 ---
 
