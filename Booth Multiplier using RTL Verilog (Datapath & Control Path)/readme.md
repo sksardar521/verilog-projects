@@ -26,12 +26,12 @@ Booth’s algorithm optimizes signed multiplication by encoding the multiplier b
 
 Based on `(Q0, Q-1)`:
 
-| Q0 | Q-1          | Operation |
-| -- | ------------ | --------- |
-| 00 | No operation |           |
-| 01 | A = A + M    |           |
-| 10 | A = A − M    |           |
-| 11 | No operation |           |
+| Q0 | Q-1          | Operation   |
+| -- | ------------ | ---------   |
+| 0 | 0 |   Right Shift           |
+| 0 |  1            | A = A + M , Right Shift  |
+| 1 |  0            | A = A − M , Right Shift             |
+| 1 | 1|    Right Shift          |
 
 After every step:
 
