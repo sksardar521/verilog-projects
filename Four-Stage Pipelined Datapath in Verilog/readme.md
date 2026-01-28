@@ -127,6 +127,13 @@ mem[158] = 14
 ```
 
 This confirms correct execution of ADD, MUL, SUB, and SHIFT operations through the pipeline.
+<img width="743" height="263" alt="image" src="https://github.com/user-attachments/assets/9e0639a9-9c47-41ce-8e2b-1101e31b3948" />
+
+
+<img width="419" height="152" alt="image" src="https://github.com/user-attachments/assets/b8fd7f82-2a81-4174-9d89-1674e182a87f" />
+
+
+<img width="952" height="495" alt="image" src="https://github.com/user-attachments/assets/20c37b44-bcd6-44c1-a51e-e2804de1705b" />
 
 ---
 
