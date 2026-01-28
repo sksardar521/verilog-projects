@@ -53,6 +53,9 @@ The pipeline is divided into **four stages**, each triggered using a **non-overl
 
 These latches hold operands, ALU results, destination register IDs, and memory addresses as data flows through the pipeline.
 
+
+<img width="521" height="221" alt="image" src="https://github.com/user-attachments/assets/81e45a78-1c53-43b5-a8b6-d89fc232f503" />
+
 ---
 
 ## 🔢 ALU Operations Supported
