@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
-module test_mips32;
+module test_pipev_32;
 
     reg clk1,clk2;
     integer k;
-    pipe_mips32 mips(clk1,clk2);
+    pipe_32 pipev(clk1,clk2);
     initial
         begin
             clk1 =0; clk2=0;
