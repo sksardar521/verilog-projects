@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module pipe_mips32(clk1,clk2);
+module pipe_32(clk1,clk2);
     input clk1,clk2;
     reg[31:0] if_id_npc, pc,if_id_ir; //stage one IF
     reg[31:0] id_ex_npc, id_ex_a, id_ex_b, id_ex_imm, id_ex_ir;// stage two --ID
